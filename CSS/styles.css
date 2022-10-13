@@ -1,0 +1,130 @@
+html {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    background-color: #161616;
+}
+
+.divssearch {
+  display: inline-block;
+}
+
+@keyframes foldtri {
+  0% {transform:translateY(100vh);}
+  100% {transform:translateY(-50vh);}
+}
+
+@keyframes foldtri2 {
+  100% {transform:translateY(-100vh);}
+}
+
+@keyframes foldtri3 {
+  100% {transform:translateY(-195vh);}
+}
+
+@keyframes foldtri4 {
+  100% {transform:translateY(-290vh);}
+}
+
+@keyframes foldtri5 {
+  100% {transform:translateY(-385vh);}
+}
+
+.tri {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  clip-path: polygon(0% 50%, 0% 100%, 50% 50%, 100% 100%, 100% 50%, 50% 0%);
+  animation-name: foldtri;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.tri1 {
+  background-color: #161616;
+}
+
+.tri2 {
+  animation-name: foldtri2;
+  background-color: black;
+}
+
+.tri3 {
+  animation-name: foldtri3;
+  background-color: #01068f;
+}
+
+.tri4 {
+  animation-name: foldtri4;
+  background-color: black;
+}
+
+.tri5 {
+  animation-name: foldtri5;
+  background-color: #161616;
+}
+
+@keyframes foldsq {
+  0% {transform:translateY(100vh)}
+  100% {transform:translateY(-420vh)}
+}
+
+@keyframes foldsq2 {
+  100% {transform:translateY(-420vh);}
+}
+
+@keyframes foldsq3 {
+  100% {transform:translateY(-420vh);}
+}
+
+.sq {
+  width: 100%;
+  height: 5vh;
+  margin: 0;
+  position: relative;
+  animation-name: foldsq;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.sq1 {
+  animation-name: foldsq;
+  background-color: black;
+}
+
+.sq2 {
+  animation-name: foldsq2;
+  background-color: #01068f;
+}
+
+.sq3 {
+  animation-name: foldsq3;
+  background-color: black;
+}
+
+@keyframes foldse {
+  0% {transform:translateY(100vh)}
+  100% {transform:translateY(-470vh)}
+}
+
+.divse {
+  margin-left: 45%;
+  display:inline-block;
+  position: relative;
+  animation-name: foldse;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.divsetxt {
+  margin-left:47%;
+  color:white;
+}
